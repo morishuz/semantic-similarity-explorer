@@ -1,0 +1,25 @@
+[project]
+name = "semantic-similarity-explorer"
+version = "0.1.0"
+description = "Native desktop explorer for DINOv2 image and patch similarity"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.3.3",
+    "pillow>=11.2.1",
+    "pyside6>=6.11.0",
+    "torch>=2.7.1",
+    "torchvision>=0.22.1",
+    "transformers>=4.56.0",
+]
+
+[project.scripts]
+dino-embed = "main:main"
+dino-ui = "app:main"
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["app", "main", "dino_backend"]

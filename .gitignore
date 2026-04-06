@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv
+
+# Local environment files
+.env
+.env.*
+
+# Editor and IDE metadata
+.idea/
+.vscode/
+
+# Qt local build artifacts
+.qt_for_python/
